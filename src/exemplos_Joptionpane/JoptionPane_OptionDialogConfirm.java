@@ -3,10 +3,10 @@ package exemplos_Joptionpane;
 
 import javax.swing.JOptionPane;
 
-public class JoptionPane_OptionDialog {
+public class JoptionPane_OptionDialogConfirm {
     public static void main(String[] args) {
         
-        //showOptionDialog em Vetor
+        //showOptionDialog em Vetor variavel INT
         String[] varia = {"Ok_1","Ok_2","Ok_3"};
         int escolha = JOptionPane.showOptionDialog(null,"Escolha qual opção: ","Escolhendo",JOptionPane.DEFAULT_OPTION,JOptionPane.QUESTION_MESSAGE,null,varia,varia[0]);
         
@@ -24,10 +24,6 @@ public class JoptionPane_OptionDialog {
         }else if(escolha == 2){
            JOptionPane.showMessageDialog(null,"Você escolheu Ok_3.","Ok_3",JOptionPane.WARNING_MESSAGE);
            System.exit(0); 
-        }
-
-        
-    }
-
-    
+        } 
+    }  
 }
