@@ -22,8 +22,7 @@ public class Regras_de_Excecoes {
             
         }
 
-        
-        
+
         //Conversão de String para Int impedindo letras e simbolos.
         
         //1. Exemplo usando try-catch (tratando erro)
