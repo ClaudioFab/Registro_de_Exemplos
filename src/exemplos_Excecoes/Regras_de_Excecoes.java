@@ -41,8 +41,7 @@ public class Regras_de_Excecoes {
             int numeroConvertido = Integer.parseInt(entradaString);
             JOptionPane.showMessageDialog(null,numeroConvertido);
         } else {
-            JOptionPane.showMessageDialog(null,"Entrada inválida!Apenas Números!");
-            
+            JOptionPane.showMessageDialog(null,"Entrada inválida!Apenas Números!");            
         }
         
         
