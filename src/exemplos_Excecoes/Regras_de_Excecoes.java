@@ -35,10 +35,20 @@ public class Regras_de_Excecoes {
             
         }
         
-        //2. Exemplo usando .matches("\\d+") (validação antes)
+        //2. Exemplo usando regex .matches("\\d+") (validação antes)
         //.matches("\\d+") permite regras específicas dentro dele (if/try Catch por exemplo)
         if (entradaString.matches("\\d+")) {
             int numeroConvertido = Integer.parseInt(entradaString);
+            JOptionPane.showMessageDialog(null,numeroConvertido);
+        } else {
+            JOptionPane.showMessageDialog(null,"Entrada inválida!Apenas Números!");
+            
+        }
+                
+        //3. Exemplo usando regex .matches("\\d+(\\.\\d+)?") (validação antes para decimal)
+        //.matches("\\d+(\\.\\d+)?") permite utilizar exceção sem atrapalhar uso de double.
+        if (entradaString.matches("\\d+(\\.\\d+)?")) {
+            double numeroConvertido = Double.parseDouble(entradaString);
             JOptionPane.showMessageDialog(null,numeroConvertido);
         } else {
             JOptionPane.showMessageDialog(null,"Entrada inválida!Apenas Números!");
