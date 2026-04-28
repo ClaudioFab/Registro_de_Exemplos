@@ -30,11 +30,15 @@ public class Regras_de_Excecoes {
         try {                    
             int numeroConvertido = Integer.parseInt(entradaString);
             JOptionPane.showMessageDialog(null,numeroConvertido);
+
+        //(Exception e)
+        //(NumberFormatException e)
+        //(DateTimeParseException e)
         } catch (NumberFormatException e) {
             JOptionPane.showMessageDialog(null,"Entrada inválida!Apenas Números!");
             
         }
-        
+                
         //2. Exemplo usando regex .matches("\\d+") (validação antes)
         //.matches("\\d+") permite regras específicas dentro dele (if/try Catch por exemplo)
         if (entradaString.matches("\\d+")) {
