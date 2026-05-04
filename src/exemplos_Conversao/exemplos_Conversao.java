@@ -23,12 +23,18 @@ public class exemplos_Conversao {
         
         JOptionPane.showMessageDialog(null,"Número negativo com decimal: \n"+df2.format(numero));
         
-        String exemplo = "";
+        
+        
+        String exemplo = "";    
+        
+        //String para INT.
         int expInt = Integer.parseInt(exemplo);
         //double expDouble = Double.parseDouble(exemplo02);
         //boolean expBoolean = Boolean.parseBoolean(exemplo02);
         //float expFloat = Float.parseFloat(exemplo02);
-        //String expString = String.valueOf(exemplo02);
+        
+        //de volta para String.
+        String expString = String.valueOf(expInt);
 
    
     }
