@@ -1,5 +1,5 @@
 
-package Exerc_Encapsulamento;
+package exemplo_Construtor_Bateria;
  
 import javax.swing.JOptionPane;
  
@@ -7,7 +7,8 @@ import javax.swing.JOptionPane;
 //Atributo deve ser privado.
 public class BateriaCelular {    
     private int nivel;
- 
+
+    //Construtor
     public BateriaCelular(int nivel0) {
         this.nivel = nivel0;
         setNivel(nivel0);  

@@ -1,7 +1,7 @@
 
-package Classe_Objetos_Exemplos;
+package exemplo_InstanciasComGettSett;
 
-import Classe_Objetos_Exemplos.Exemplo_Estudante;
+import exemplo_InstanciasComGettSett.Exemplo_Estudante;
 import java.util.Scanner;
 import javax.swing.JOptionPane;
 

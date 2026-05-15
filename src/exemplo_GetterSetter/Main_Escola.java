@@ -1,5 +1,5 @@
 
-package Exerc_Estudante;
+package exemplo_GetterSetter;
 
 
 public class Main_Escola {

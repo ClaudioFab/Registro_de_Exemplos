@@ -1,5 +1,5 @@
 
-package Classe_Objetos_Exemplos;
+package exemplo_InstanciasComGettSett;
 
 import javax.swing.JOptionPane;
 

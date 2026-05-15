@@ -36,7 +36,7 @@ Nível atual (get)
 Status da bateria 
 */
  
-package Exerc_Encapsulamento;
+package exemplo_Construtor_Bateria;
  
 public class Main_Bateria {
     public static void main(String[] args) {
@@ -47,7 +47,7 @@ public class Main_Bateria {
         //Checagem inicial do status da bateria.
         cell01.status();
         
-        //Obs:Precisei desmontar em variaveis pois tenho dificuldade usando retorno.
+        //Obs:desmontar em variaveis.
         //Permitir carregar bateria e mostrar Nível atual(get).
         int atualNivel = cell01.getNivel();
         int novoNivel = cell01.carregar(atualNivel);

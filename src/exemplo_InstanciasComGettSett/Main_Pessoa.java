@@ -12,7 +12,7 @@ Chame o método apresentar() para cada objeto, exibindo as
 informações no console.
 */
 
-package Classe_Objetos_Exemplos;
+package exemplo_InstanciasComGettSett;
 
 //Classe Main
 public class Main_Pessoa {

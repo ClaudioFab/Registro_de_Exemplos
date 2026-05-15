@@ -1,5 +1,5 @@
 
-package Exerc_Estudante;
+package exemplo_GetterSetter;
 
 
 import javax.swing.JOptionPane;
@@ -37,7 +37,7 @@ public class Estudante {
             this.idade = idade;
         } else {
             this.idade = idade;
-            JOptionPane.showMessageDialog(null,getNome() + " não pode participar por ter " + getIdade() + " anos.");
+            JOptionPane.showMessageDialog(null,getNome()+" não pode participar por ter "+getIdade()+" anos.");
             this.idade =0;
         }
  
@@ -68,7 +68,15 @@ public class Estudante {
     }
     
     public void dados(){
-        JOptionPane.showMessageDialog(null,"Nome: "+getNome()+"\nIdade: "+getIdade()+"\nEndereço: "+getEndereco()+"\nCPF: "+getCpf()+"\nIdentidade: "+getRg()+"\n");
+        String mensagem="";
+
+        mensagem += "Nome: "+getNome()+"\n";
+        mensagem += "Idade: "+getIdade()+"\n";
+        mensagem += "Endereço: "+getEndereco()+"\n";
+        mensagem += "CPF: "+getCpf()+"\n";
+        mensagem += "Identidade: "+getRg()+"\n";
+
+        JOptionPane.showMessageDialog(null,mensagem);
 
     }
 
