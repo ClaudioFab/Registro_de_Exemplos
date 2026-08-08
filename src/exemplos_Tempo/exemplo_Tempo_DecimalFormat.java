@@ -1,7 +1,9 @@
 
 package exemplos_Tempo;
+import java.sql.Date;
 import java.time.LocalDate;
 import java.time.LocalDateTime;
+import java.time.format.DateTimeFormatter;
 import java.time.temporal.ChronoUnit;
 import javax.swing.JOptionPane;
 public class exemplo_Tempo_DecimalFormat {
@@ -56,6 +58,37 @@ public class exemplo_Tempo_DecimalFormat {
         
         
         
+        //Converter String para data
+        
+        String dataTexto = "15/06/1989";
+        
+        //Define o formato recebido
+        DateTimeFormatter formatoBrasileiro = DateTimeFormatter.ofPattern("dd/MM/yyyy");
+        
+        //Converte String para LocalDate
+        LocalDate data = LocalDate.parse(dataTexto, formatoBrasileiro);
+        
+        //Converte LocalDate para Date/SQL(em retorno)
+        //return Date.valueOf(data);
+        
+        
+        
+        //Criando uma função
+        /*
+        --------------------------------------------------------------------
+        public static Date converterParaSqlDate(String dataTexto) {
+        //Define o formato recebido
+        DateTimeFormatter formatoBrasileiro = DateTimeFormatter.ofPattern("dd/MM/yyyy");
+
+        //Converte String para LocalDate
+        LocalDate data = LocalDate.parse(dataTexto, formatoBrasileiro);
+
+        //Converte LocalDate para Date/SQL
+        return Date.valueOf(data);
+
+        }
+        --------------------------------------------------------------------
+        */   
         
         
         
